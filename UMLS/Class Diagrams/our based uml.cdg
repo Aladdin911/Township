@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="uml">
+  <ClassDiagramComponents>
+    <Class name="player" package="" visibility="public" xPosition="998.0" yPosition="6.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="level" type="int" visibility="private"/>
+        <Field name="experience" type="int" visibility="private"/>
+        <Field name="experience_to_pass" type="int" visibility="private"/>
+        <Field name="money" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="inc_experience" returnType="void" visibility="public"/>
+        <Method name="check_pass_level" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="build" package="" visibility="public" xPosition="421.0" yPosition="81.0">
+      <Fields>
+        <Field name="time_to_build" type="double" visibility="private"/>
+        <Field name="cost_to_build" type="double" visibility="private"/>
+        <Field name="experience_given" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="factory" package="" visibility="public" xPosition="622.0" yPosition="307.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="time_to_product" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="product" package="" visibility="public" xPosition="1229.0" yPosition="307.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="price" type="int" visibility="private"/>
+        <Field name="cost" type="int" visibility="private"/>
+        <Field name="count" type="int" visibility="private"/>
+        <Field name="experience_given" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="sell" returnType="int" visibility="public"/>
+        <Method name="buy" returnType="int" visibility="public"/>
+        <Method name="add" returnType="void" visibility="public"/>
+        <Method name="used" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="storage" package="" visibility="public" xPosition="1245.0" yPosition="51.0">
+      <Fields>
+        <Field name="Products" type="product[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="sall" returnType="int" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="buy" returnType="int" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="cloth_factory" package="" visibility="public" xPosition="679.0" yPosition="636.0">
+      <Fields>
+        <Field name="cotton_needed" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name=" dary_factory" package="" visibility="public" xPosition="890.0" yPosition="626.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="order_list" package="" visibility="public" xPosition="920.0" yPosition="348.0">
+      <Fields>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="bakery" package="" visibility="public" xPosition="486.0" yPosition="607.0">
+      <Fields>
+        <Field name="flour_needed" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="communty_build" package="" visibility="public" xPosition="277.0" yPosition="273.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="football_club" package="" visibility="public" xPosition="263.0" yPosition="534.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="mall" package="" visibility="public" xPosition="52.0" yPosition="524.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="houses" package="" visibility="public" xPosition="190.0" yPosition="45.0">
+      <Fields>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="house" package="" visibility="public" xPosition="-53.0" yPosition="148.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="tower" package="" visibility="public" xPosition="52.0" yPosition="313.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="soil" package="" visibility="public" xPosition="-65.0" yPosition="-183.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="town" package="" visibility="public" xPosition="679.0" yPosition="-11.0">
+      <Fields>
+        <Field name="town_name" type="String" visibility="private"/>
+        <Field name="Builds" type="build[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="add_build" returnType="void" visibility="public">
+          <Argument type="build" name="b"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="houses" target="build"/>
+    <IsRelation name="is" source="tower" target="houses"/>
+    <IsRelation name="is" source=" dary_factory" target="factory"/>
+    <HasRelation name="Town" source="player" target="town" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="soil" target="build"/>
+    <IsRelation name="is" source="cloth_factory" target="factory"/>
+    <IsRelation name="is" source="mall" target="communty_build"/>
+    <IsRelation name="is" source="factory" target="build"/>
+    <IsRelation name="is" source="bakery" target="factory"/>
+    <IsRelation name="is" source="football_club" target="communty_build"/>
+    <HasRelation name="Builds" source="town" target="build" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="Products" source="product" target="storage" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="ArrayList"/>
+    <IsRelation name="is" source="house" target="houses"/>
+    <HasRelation name="Storage" source="player" target="storage" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="communty_build" target="build"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

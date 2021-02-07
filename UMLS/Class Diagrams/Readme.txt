@@ -1,0 +1,1 @@
+u have to install Easyuml plugin in your Netbeans

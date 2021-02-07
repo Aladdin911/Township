@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Township">
+  <ClassDiagramComponents>
+    <Class name="build" package="com.company" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="Time_To_Build" type="int" visibility="private"/>
+        <Field name="price" type="int" visibility="package"/>
+        <Field name="price_by_cash" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="n"/>
+          <Argument type="int" name="p"/>
+          <Argument type="int" name="p_cash"/>
+          <Argument type="int" name="Time_To_Build"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTime_To_Build" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="houses" package="com.company" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="n"/>
+          <Argument type="int" name="p"/>
+          <Argument type="int" name="p_cash"/>
+          <Argument type="int" name="Time_To_Build"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPrice" returnType="int" visibility="public"/>
+        <Method name="getprice_by_cash" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="house" package="com.company" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="cottage" package="com.company" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="community_build" package="com.company" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="n"/>
+          <Argument type="int" name="p"/>
+          <Argument type="int" name="p_cash"/>
+          <Argument type="int" name="Time_To_Build"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="farming" package="com.company" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="n"/>
+          <Argument type="int" name="p"/>
+          <Argument type="int" name="p_cash"/>
+          <Argument type="int" name="Time_To_Build"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Tower" package="com.company" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="mall" package="com.company" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="football_club" package="com.company" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="club" package="com.company" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="school" package="com.company" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="soil_house" package="com.company" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="order_building" package="com.company" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Factory" package="com.company" visibility="public" isAbstract="true" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="start_produce" type="Date" visibility="package"/>
+        <Field name="end_produce" type="Date" visibility="package"/>
+        <Field name="current" type="int" visibility="package"/>
+        <Field name="time_to_product" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="n"/>
+          <Argument type="int" name="p"/>
+          <Argument type="int" name="p_cash"/>
+          <Argument type="int" name="Time_To_Build"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="produce" returnType="boolean" visibility="public" isAbstract="true">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="produce_finished" returnType="boolean" visibility="public" isAbstract="true"/>
+        <Method name="available" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="chicken_coop" package="com.company" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="wheat_needed" type="int" visibility="private"/>
+        <Field name="egg_produced" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="produce" returnType="boolean" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="produce_finished" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="bakery" package="com.company" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="flour_needed" type="int" visibility="private"/>
+        <Field name="Bread_produced" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="produce" returnType="boolean" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="produce_finished" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="suger_shop" package="com.company" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="sugercane_needed_fo_white" type="int" visibility="private"/>
+        <Field name="sugercane_needed_fo_brown" type="int" visibility="private"/>
+        <Field name="suger_produced" type="int" visibility="private"/>
+        <Field name="brown_suger_produced" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="produce" returnType="boolean" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="produce_finished" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="sweet_shop" package="com.company" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="flour_needed" type="int" visibility="private"/>
+        <Field name="suger_needed" type="int" visibility="private"/>
+        <Field name="brown_suger_needed_fo_cookies" type="int" visibility="private"/>
+        <Field name="cookies_produced" type="int" visibility="private"/>
+        <Field name="flour_cookies_produced" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="produce" returnType="boolean" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="produce_finished" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="clothes_Factory" package="com.company" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="cotton_needed" type="int" visibility="public"/>
+        <Field name="t_shirt_produced" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="produce" returnType="boolean" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="produce_finished" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gui" package="com.company" visibility="public" xPosition="920.0" yPosition="820.0">
+      <Fields>
+        <Field name="Back" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Exit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="background" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="credit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="j3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="start" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Credit" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="keypressed" returnType="void" visibility="public">
+          <Argument type="KeyEvent" name="e"/>
+        </Method>
+        <Method name="setcolor" returnType="void" visibility="public">
+          <Argument type="JButton" name="p"/>
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="resetcolor" returnType="void" visibility="public">
+          <Argument type="JButton" name="p1"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="startActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="startMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ExitActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="creditActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="startMouseReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="startMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="creditMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="creditMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ExitMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ExitMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="startKeyTyped" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="startKeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="BackActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="BackMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="BackMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="startMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="startMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="creditMouseReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ExitMouseReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="creditMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="ExitMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="BackMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="BackMouseReleased" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Gui_game" package="com.company" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields>
+        <Field name="timer" type="Timer" visibility="package"/>
+        <Field name="min" type="int" visibility="package"/>
+        <Field name="x" type="Timer" visibility="package"/>
+        <Field name="h" type="Timer" visibility="package"/>
+        <Field name="g" type="int" visibility="package"/>
+        <Field name="l_8" type="int" visibility="package"/>
+        <Field name="y" type="int" visibility="package"/>
+        <Field name="customer_list" type="orders[]" visibility="package"/>
+        <Field name="start_plant" type="Date" visibility="package"/>
+        <Field name="end_plant" type="Date" visibility="package"/>
+        <Field name="start_building" type="Date" visibility="package"/>
+        <Field name="end_building" type="Date" visibility="package"/>
+        <Field name="f" type="Factory" visibility="package"/>
+        <Field name="Player_name" type="String" visibility="package"/>
+        <Field name="current_plant" type="int" visibility="package"/>
+        <Field name="builder_situation" type="int" visibility="package"/>
+        <Field name="current_p1" type="int" visibility="package"/>
+        <Field name="current_p2" type="int" visibility="package"/>
+        <Field name="Player_1" type="player" visibility="public" isStatic="true"/>
+        <Field name="Ask_name_back_ground" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Build" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Build_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Ex_bar" type="javax.swing.JProgressBar" visibility="private"/>
+        <Field name="Green_background" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="No_button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="Pay_method" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="Town_name" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="Yes_button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="accept_name" type="javax.swing.JButton" visibility="private"/>
+        <Field name="accept_or" type="javax.swing.JButton" visibility="private"/>
+        <Field name="back" type="javax.swing.JButton" visibility="private"/>
+        <Field name="back_button" type="javax.swing.JButton" visibility="private"/>
+        <Field name="back_ground" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="bakery_build1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="bakery_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="bar" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="barn" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="bread_amount" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="bread_icon" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="build_1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_10" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_11" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_12" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_6" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_7" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_8" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_9" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_bakery" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_chicken_coop" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_cloth" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_club" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_cottage" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_football_club" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_house" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_mall" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_school" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_suger_sh" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_sweet" type="javax.swing.JButton" visibility="private"/>
+        <Field name="build_tower" type="javax.swing.JButton" visibility="private"/>
+        <Field name="c_bar1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cash_amount" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cash_rew" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="chicken_coop" type="javax.swing.JButton" visibility="private"/>
+        <Field name="chicken_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cloth_build_1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cloth_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="club_build" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="club_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="coin_bar" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="coin_rew" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="container" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="coton_amount" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cottage_build" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cottage_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cotton_icon" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="d_9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="duration" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="flour_amount" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="flour_icon" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="football_build" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="football_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="forward" type="javax.swing.JButton" visibility="private"/>
+        <Field name="head_Build" type="javax.swing.JButton" visibility="private"/>
+        <Field name="house_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="house_site" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="j_9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="level" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="level_up" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="logo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="mall_build" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="mall_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="mbar" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="money_amount1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name_field" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="name_warning" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="name_warning_ok" type="javax.swing.JButton" visibility="private"/>
+        <Field name="no" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="o_9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="option_manu" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="options" type="javax.swing.JButton" visibility="private"/>
+        <Field name="order_1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="order_1_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="order_2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="order_2_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="order_3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="order_3_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="order_4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="order_4_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="order_5" type="javax.swing.JButton" visibility="private"/>
+        <Field name="order_5_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="order_ex" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="order_frame" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="order_price" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="orders" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="pay_by_cash" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="pay_by_coin" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="produce_p1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="produce_p2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="school_build" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="school_label" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="small" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="soil_cotton" type="javax.swing.JButton" visibility="private"/>
+        <Field name="soil_house" type="javax.swing.JButton" visibility="private"/>
+        <Field name="soil_sugercane" type="javax.swing.JButton" visibility="private"/>
+        <Field name="soil_wheat" type="javax.swing.JButton" visibility="private"/>
+        <Field name="star" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="storage_build" type="javax.swing.JButton" visibility="private"/>
+        <Field name="suger_sh_build" type="javax.swing.JButton" visibility="private"/>
+        <Field name="suger_sh_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="sweet_build" type="javax.swing.JButton" visibility="private"/>
+        <Field name="sweet_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="t_shirt_amount" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="t_shirt_icon" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tower_lab" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tower_site" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="up_level" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="wheat_am" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="yes" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setVisible" returnType="void" visibility="public">
+          <Argument type="boolean" name="bln"/>
+        </Method>
+        <Method name="bars" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="face" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="setLabel_1" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="setLabel_2" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="store_elements_1" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="soil_elements" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="orderIschosen" returnType="void" visibility="public"/>
+        <Method name="display_order" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="store_elements_2" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="setcolor" returnType="void" visibility="public">
+          <Argument type="JButton" name="p"/>
+        </Method>
+        <Method name="resetcolor" returnType="void" visibility="public">
+          <Argument type="JButton" name="p1"/>
+        </Method>
+        <Method name="music" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="e"/>
+        </Method>
+        <Method name="detail" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="given" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="close" returnType="void" visibility="public"/>
+        <Method name="option" returnType="void" visibility="public">
+          <Argument type="boolean" name="e"/>
+        </Method>
+        <Method name="show_items" returnType="void" visibility="public"/>
+        <Method name="open_storage" returnType="void" visibility="public"/>
+        <Method name="BuildingIsChosen" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="accept_nameActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="head_BuildActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cloth_build_1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="storage_buildActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="back_buttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="name_fieldActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="start_building" returnType="void" visibility="package">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="finish_build" returnType="void" visibility="package"/>
+        <Method name="set_produce_p1_icon" returnType="void" visibility="package">
+          <Argument type="int" name="i"/>
+          <Argument type="boolean" name="light"/>
+        </Method>
+        <Method name="set_produce_p2_icon" returnType="void" visibility="package">
+          <Argument type="int" name="i"/>
+          <Argument type="boolean" name="light"/>
+        </Method>
+        <Method name="BuildActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_clothActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_bakeryActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="bakery_build1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soil_houseActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="name_warning_okActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="BuildMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="BuildMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="optionsMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="optionsMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="No_buttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="Yes_buttonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="optionsActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="storage_buildMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="storage_buildMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="accept_nameMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="No_buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="Yes_buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="BuildMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_bakeryMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_clothMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="back_buttonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="storage_buildMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_houseMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="name_warning_okMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="optionsMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="planting" returnType="void" visibility="public">
+          <Argument type="int" name="seeds_price"/>
+          <Argument type="int" name="seeds_seril"/>
+        </Method>
+        <Method name="soil_cottonActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soil_wheatActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soil_house_entered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_houseMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="Ex_barMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="Green_backgroundMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_sweetActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="sweet_buildActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_towerActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_houseActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_suger_shActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="suger_sh_buildActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="accept_order" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="order_1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="order_2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="order_3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="order_4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="order_5ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="forwardActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="backMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="backMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="backMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="forwardMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="forwardMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="forwardMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_chicken_coopActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_schoolActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_football_clubActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_clubActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_mallActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_cottageActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="pay_by_cashActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soil_cottonMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_cottonMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_wheatMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_wheatMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_cottonMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_wheatMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_sugercaneMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_sugercaneMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_sugercaneMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="soil_sugercaneActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="Green_backgroundMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="pay_by_coinActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="pay_by_cashMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="pay_by_coinMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="bakery_build1MouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="accept_orActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="chicken_coopActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cloth_build_1MouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="suger_sh_buildMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="sweet_buildMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="chicken_coopMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="produce_p1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="produce_p1MouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="produce_p1MouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="produce_p2MouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="produce_p2MouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="produce_p2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_1KeyPressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.KeyEvent" name="evt"/>
+        </Method>
+        <Method name="build_1MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_10ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="build_2MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_3MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_4MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_5MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_6MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_7MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_8MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_9MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_10MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_11MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="build_12MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="accept_orMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="accept_orMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="cloth_build_1MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="chicken_coopMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="sweet_buildMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="suger_sh_buildMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="bakery_build1MousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="bakery_build1MouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="chicken_coopMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="sweet_buildMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="suger_sh_buildMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="cloth_build_1MouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="head_BuildMouseEntered" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="head_BuildMouseExited" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="head_BuildMousePressed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="update_bar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="loading" package="com.company" visibility="public" xPosition="1520.0" yPosition="820.0">
+      <Fields>
+        <Field name="t" type="Timer" visibility="package"/>
+        <Field name="ac" type="ActionListener" visibility="package"/>
+        <Field name="x" type="int" visibility="package"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="public"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="loadingbar" type="javax.swing.JProgressBar" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="orders" package="com.company" visibility="public" xPosition="1820.0" yPosition="820.0">
+      <Fields>
+        <Field name="price" type="int" visibility="package"/>
+        <Field name="given_exp" type="int" visibility="package"/>
+        <Field name="order_list" type="int[]" visibility="package"/>
+        <Field name="rand" type="Random" visibility="package"/>
+        <Field name="order_report" type="String" visibility="package"/>
+        <Field name="difficult" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="oders_valid" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="player" package="com.company" visibility="public" xPosition="2120.0" yPosition="820.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="level" type="int" visibility="private"/>
+        <Field name="experience" type="int" visibility="private"/>
+        <Field name="experience_to_pass" type="int" visibility="private"/>
+        <Field name="money" type="int" visibility="private"/>
+        <Field name="Storage" type="storage" visibility="public" isStatic="true"/>
+        <Field name="Town" type="town" visibility="public" isStatic="true"/>
+        <Field name="cash" type="int" visibility="private"/>
+        <Field name="x" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="level"/>
+          <Argument type="int" name="experience"/>
+          <Argument type="int" name="experience_to_pass"/>
+          <Argument type="int" name="money"/>
+          <Argument type="int" name="cash"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getX" returnType="int" visibility="public"/>
+        <Method name="getCash" returnType="int" visibility="public"/>
+        <Method name="setcash" returnType="void" visibility="public">
+          <Argument type="int" name="cash"/>
+        </Method>
+        <Method name="getMoney" returnType="int" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getLevel" returnType="int" visibility="public"/>
+        <Method name="getExperience" returnType="int" visibility="public"/>
+        <Method name="setExperience" returnType="void" visibility="public">
+          <Argument type="int" name="experience"/>
+        </Method>
+        <Method name="setMoney" returnType="void" visibility="public">
+          <Argument type="int" name="money"/>
+        </Method>
+        <Method name="add_Money" returnType="void" visibility="public">
+          <Argument type="int" name="money"/>
+        </Method>
+        <Method name="inc_experience" returnType="void" visibility="public">
+          <Argument type="int" name="experience_gained"/>
+        </Method>
+        <Method name="getExperience_to_pass" returnType="int" visibility="public"/>
+        <Method name="check_pass_level" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="storage" package="com.company" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields>
+        <Field name="Product" type="product" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="storage_dispaly" returnType="void" visibility="public"/>
+        <Method name="sell" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="buy" returnType="void" visibility="public">
+          <Argument type="int" name="i"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="product" package="com.company" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="price" type="int" visibility="private"/>
+        <Field name="cost" type="int" visibility="private"/>
+        <Field name="count" type="int" visibility="private"/>
+        <Field name="experience_given" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="price"/>
+          <Argument type="int" name="cost"/>
+          <Argument type="int" name="count"/>
+          <Argument type="int" name="experience_given"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="dispaly_product" returnType="void" visibility="public"/>
+        <Method name="use" returnType="void" visibility="public">
+          <Argument type="int" name="num"/>
+        </Method>
+        <Method name="getExperience_given" returnType="int" visibility="public"/>
+        <Method name="getPrice" returnType="int" visibility="public"/>
+        <Method name="increase" returnType="void" visibility="public">
+          <Argument type="int" name="num"/>
+        </Method>
+        <Method name="sell" returnType="int" visibility="public"/>
+        <Method name="getCount" returnType="int" visibility="public"/>
+        <Method name="buy" returnType="int" visibility="public"/>
+        <Method name="add" returnType="void" visibility="package">
+          <Argument type="int" name="times"/>
+        </Method>
+        <Method name="used" returnType="void" visibility="package">
+          <Argument type="int" name="times"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="town" package="com.company" visibility="public" xPosition="620.0" yPosition="1220.0">
+      <Fields>
+        <Field name="town_name" type="String" visibility="public"/>
+        <Field name="num_of_builds" type="int" visibility="private"/>
+        <Field name="Builds" type="build[]" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Storage" source="com.company.player" target="com.company.storage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.company.Factory" target="com.company.build"/>
+    <IsRelation name="is" source="com.company.house" target="com.company.houses"/>
+    <IsRelation name="is" source="com.company.chicken_coop" target="com.company.Factory"/>
+    <IsRelation name="is" source="com.company.farming" target="com.company.build"/>
+    <HasRelation name="Product" source="com.company.storage" target="com.company.product" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.company.cottage" target="com.company.houses"/>
+    <IsRelation name="is" source="com.company.community_build" target="com.company.build"/>
+    <IsRelation name="is" source="com.company.school" target="com.company.community_build"/>
+    <HasRelation name="f" source="com.company.Gui_game" target="com.company.Factory" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.company.club" target="com.company.community_build"/>
+    <IsRelation name="is" source="com.company.suger_shop" target="com.company.Factory"/>
+    <IsRelation name="is" source="com.company.bakery" target="com.company.Factory"/>
+    <IsRelation name="is" source="com.company.football_club" target="com.company.community_build"/>
+    <IsRelation name="is" source="com.company.mall" target="com.company.community_build"/>
+    <IsRelation name="is" source="com.company.soil_house" target="com.company.build"/>
+    <HasRelation name="Town" source="com.company.player" target="com.company.town" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="com.company.houses" target="com.company.build"/>
+    <IsRelation name="is" source="com.company.clothes_Factory" target="com.company.Factory"/>
+    <IsRelation name="is" source="com.company.Tower" target="com.company.community_build"/>
+    <IsRelation name="is" source="com.company.order_building" target="com.company.build"/>
+    <IsRelation name="is" source="com.company.sweet_shop" target="com.company.Factory"/>
+    <HasRelation name="Player_1" source="com.company.Gui_game" target="com.company.player" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
